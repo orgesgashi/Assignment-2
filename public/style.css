@@ -1,0 +1,73 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+  
+  /* Header styles */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  /* Table styles */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  table th {
+    background-color: #2d6187;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  table td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Make mandatory column red if value is false and green if true */
+  
+  table td:last-child {
+    color: red;
+  }
+  
+  table td:last-child[data-mandatory="true"] {
+    color: green;
+  }
+  

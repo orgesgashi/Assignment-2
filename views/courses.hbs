@@ -1,0 +1,26 @@
+<body>
+    <h1>List of Courses</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Credits</th>
+                <th>Duration</th>
+                <th>Mandatory</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each courses}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.credits}}</td>
+                <td>{{this.duration}}</td>
+                <td data-mandatory="{{this.mandatory}}">{{this.mandatory}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+
